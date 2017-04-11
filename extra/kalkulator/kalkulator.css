@@ -1,0 +1,118 @@
+button{
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: #ffffff;
+  color: #00bfff;
+  border: 1px solid #00bfff;
+  font-size: 16px;
+  transition: 0.1s all;
+}
+button:hover{
+  background: #00bfff;
+  color: #ffffff;
+  border: 1px solid #00bfff;
+}
+.wide{
+  width: 124px;
+}
+#input{
+  width: 232px;
+  height: 58px;
+  border: 1px solid #00bfff;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #00bfff;
+  font-family: courier;
+  background: #ffffff;
+}
+@keyframes inputForm{
+  0%{background: white;}
+  50%{background: red;}
+  100%{background: white;}
+}
+#wrapper{
+  width: 360px;
+  margin: auto;
+}
+.angka{
+  color: #003959;
+}
+.hasil{
+  color: green;
+}
+h2{
+  color: #00bfff;
+  font-family: verdana;
+}
+#kalkulator{
+  width: 320px;
+  margin-top: 90px;
+  padding: 20px;
+  border:1px solid #00bfff;
+}
+tr:last-child td{
+  position: relative;
+}
+#log{
+  overflow-y: scroll;
+  font-family: courier;
+  font-size: 11px;
+  width: 286px;
+  line-height: 20px;
+  max-height: 40px;
+  padding: 4px 10px 10px 10px;
+  border-left: 7px solid #00bfff;
+  background: #ffffff;
+  text-indent: 15px;
+  color: grey;
+}
+#log::first-line{
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.warning{
+  color:#ff8c00;
+}
+.error{
+  color:red;
+}
+.sukses{
+  color: green;
+}
+.total{
+  color: #00bfff;
+}
+#row{
+  position: absolute;
+  font-size: 14px;
+  left: 17px;
+  top: 6px;
+  color: #00bfff;
+}
+.bersih{
+  position: relative;
+}
+.bersih:before{
+  content: '';
+  position: absolute;
+  border: #ffffff solid 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.bersih:focus:before{
+  animation: bersih 0.5s;
+}
+@keyframes bersih{
+  100% {
+    border: 6px solid #00bfff;
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
